@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong</title>
+ 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+ 
+        button {
+            padding: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+ 
+        #msgFimDeJogo {
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 10px;
+            display: none;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <canvas id="canvas" width="600" height="600"></canvas>
+ 
+    <table width="600">
+        <tr>
+            <td>
+                <p style="margin-top: 10px; margin-bottom: 10px;"><b style="color: rgb(0, 255, 0);">Jogador 1 (verde):</b> W / S</p>
+            </td>
+            <td>
+                <p style="margin-top: 10px; margin-bottom: 10px;"><b style="color: rgb(0, 0, 255);">Jogador 2 (azul):</b> setas ↑ / ↓</p>
+            </td>
+        </tr>
+    </table>
+    
+ 
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <button id="botaoIniciar">Iniciar</button>
+                    <button id="botaoJogarNovamente" style="display: none;">Jogar novamente</button>
+                </div>
+            </td>
+            <td>
+                <p id="msgFimDeJogo"></p>
+            </td>
+        </tr>
+    </table>
+ 
+    <script src="m3.js"></script>
+    <script src="main.js"></script>
+ 
+</body>
+</html>
